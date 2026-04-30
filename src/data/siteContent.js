@@ -1,40 +1,41 @@
 export const navItems = [
   { to: '/', label: 'Home' },
-  { to: '/planner', label: 'Calendar' },
+  { to: '/calendar', label: 'Calendar' },
+  { to: '/login', label: 'Login' },
 ]
 
 export const overviewStats = [
   {
-    label: 'Views',
-    value: '4',
-    note: 'Day, week, month, schedule',
+    label: 'Pages',
+    value: '3',
+    note: 'Landing, calendar, and login',
   },
   {
-    label: 'Filters',
-    value: '4',
-    note: 'Classes, work, projects, personal',
+    label: 'Item types',
+    value: '2',
+    note: 'Tasks and events share one planner list',
   },
   {
     label: 'Saving',
     value: 'Local',
-    note: 'New events stay after refresh',
+    note: 'Added items stay after refresh',
   },
 ]
 
 export const featureCards = [
   {
-    tag: 'Jump',
-    title: 'Move across the month',
-    detail: 'Use the mini calendar or month controls.',
+    tag: 'Plan',
+    title: 'Add tasks and events',
+    detail: 'Use one form for classes, assignments, projects, and personal items.',
   },
   {
-    tag: 'Filter',
-    title: 'Search and toggle calendars',
-    detail: 'Narrow the schedule without leaving the page.',
+    tag: 'Assist',
+    title: 'Get a simple planning suggestion',
+    detail: 'The create form generates a small next-step suggestion for each item.',
   },
   {
-    tag: 'Edit',
-    title: 'Create, update, and delete',
-    detail: 'Open any event and change it in place.',
+    tag: 'Track',
+    title: 'Review the month',
+    detail: 'Select a date on the calendar and mark items complete as you work.',
   },
 ]

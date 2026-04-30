@@ -1,12 +1,17 @@
 import Container from 'react-bootstrap/Container'
+import { useLocation } from 'react-router-dom'
 
 function SiteFooter() {
+  const location = useLocation()
+
+  if (location.pathname.startsWith('/calendar')) {
+    return null
+  }
+
   return (
     <footer className="site-footer">
       <Container>
-        <div className="footer-card">
-          <p className="footer-copy">AI Smart Planner template</p>
-        </div>
+        <p className="footer-copy">AI Student Planner milestone project</p>
       </Container>
     </footer>
   )
